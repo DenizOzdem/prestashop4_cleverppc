@@ -27,10 +27,6 @@ Feature: DataTable Login Functionality
       | useremail | userpassword |
       |           |              |
 
-  Scenario Outline: Login with email and password
-    When Send keys email as "<useremail>" password as "<userpassword>"
+  Scenario: Login with email and password
+    When Send keys email as "teamone.techno@gmail.com" password as "987654321"
     Then Welcome message should be displayed
-    Examples:
-      | useremail                | userpassword |
-      | teamone.techno@gmail.com | 987654321    |
-
