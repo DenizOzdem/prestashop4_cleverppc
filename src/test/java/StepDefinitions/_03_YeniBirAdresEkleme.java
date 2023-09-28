@@ -1,57 +1,41 @@
 package StepDefinitions;
 
 
-import Pages.BugrahanLocaters;
+import Pages.Locaters;
 import Utilities.GWD;
 import io.cucumber.java.en.*;
 
 
     public class _03_YeniBirAdresEkleme {
 
-        BugrahanLocaters b=new BugrahanLocaters();
-
-        //kodlarımın çalışması için login olunması gerek.
-        @Given("Navigate to Cleverppc")
-        public void navigateToCleverppc() {
-
-            GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-        }
+        Locaters pl = new Locaters();
 
         @When("Click the sitemap button. Then click on the addresses button. Add a new address to the page that opens.")
         public void clickTheSitemapButtonThenClickOnTheAddressesButtonAddANewAddressToThePageThatOpens() throws InterruptedException {
 
-            // b.myClick(b.signIn);                          -
-            // b.mySendKeys(b.eMail,"deneme123@gmail.com");    -
-            // b.mySendKeys(b.password,"deneme123");             ->  Login
-            // b.myClick(b.loginButonu);                       -
-            //                                             -
-            b.myClick(b.siteMap);
-            b.myClick(b.adresses);
-            b.myClick(b.adresEkleButonu);
-            b.mySendKeys(b.company, "TechnoStudy");
-            b.mySendKeys(b.adress1, "den mh./den sk./no:35/kat:35/daire:64");
-            b.mySendKeys(b.adress2,"den mh./den sk./no:36/kat:36/daire:66");
-            b.mySendKeys(b.city,"deneme");
-            b.myClick(b.state);
+            pl.myClick(pl.siteMap);
+            pl.myClick(pl.adresses);
+            pl.myClick(pl.adresEkleButonu);
+            pl.mySendKeys(pl.company, "TechnoStudy");
+            pl.mySendKeys(pl.adress1, "den mh./den sk./no:35/kat:35/daire:64");
+            pl.mySendKeys(pl.adress2,"den mh./den sk./no:36/kat:36/daire:66");
+            pl.mySendKeys(pl.city,"deneme");
+            pl.myClick(pl.state);
             Thread.sleep(1000);
-            b.myClick(b.stateSecim);
-            b.mySendKeys(b.postcode,"35000");
-            b.mySendKeys(b.homePhone,"05333333333");
-            b.mySendKeys(b.mobilPhone,"05444444444");
-            b.mySendKeys(b.informaiton,"test aşaması");
-            b.myClick(b.saveButonu);
+            pl.myClick(pl.stateSecim);
+            pl.mySendKeys(pl.postcode,"35000");
+            pl.mySendKeys(pl.homePhone,"05333333333");
+            pl.mySendKeys(pl.mobilPhone,"05444444444");
+            pl.mySendKeys(pl.informaiton,"test aşaması");
+            pl.myClick(pl.saveButonu);
 
         }
         @Then("The user should successfully add a new address.")
         public void theUserShouldSuccessfullyAddANewAddress() {
 
-            b.verifyContainsText(b.adreslerinListesiYazisi,"Your addresses are listed below.");
+            pl.verifyContainsText(pl.adreslerinListesiYazisi,"Your addresses are listed below.");
 
-            //testin geçmesi için adresses bölümünde hiç adres kaydı olmaması gerek. varsa çalıştırmadan silmeyi unutmayalım.
+            GWD.quiteDriver();
 
-            GWD.quiteDriver(); // ->  merge edilince silenecek
-
-            // b.myClick(b.anaSayfayaDonusButonu);  -> benden sonraki Sepete Ürün Ekleme testi için
-            //                                        testler merge edilince aktif edilecek
         }
     }

@@ -14,8 +14,12 @@ import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Parent {
+
+    Locaters pl = new Locaters();
     public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
     public void myClick(WebElement element) {
         // butonu tıklatacağın zaman hangi aşamalar lazım
@@ -58,6 +62,23 @@ public class Parent {
         //Actions aksiyon=Aksiyonlar.sendKeys(Keys.ESCAPE).build;
         //aksiyon.perform();
 
+    }
+
+    public List<String> added= new ArrayList<>();
+    public void myClickScript(WebElement element) {
+
+
+        JavascriptExecutor js= (JavascriptExecutor) GWD.getDriver();
+        scrollToElement(element);
+        //wait.until(ExpectedConditions.elementToBeClickable(element));
+        js.executeScript("arguments[0].click();", element );
+    }
+    public void hover(WebElement element) {
+        Actions action= new Actions(GWD.getDriver());
+        action.moveToElement(element).build().perform();
+    }
+    public int random(){
+        return (int) (Math.random() * pl.AllProuducts.size());
     }
 
 }

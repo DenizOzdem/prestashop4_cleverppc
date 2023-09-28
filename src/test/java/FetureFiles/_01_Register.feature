@@ -1,4 +1,3 @@
-
 Feature: DataTable Register Functionality
 
   Background:

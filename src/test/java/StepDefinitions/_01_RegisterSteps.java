@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import Pages.denizLocaters;
+import Pages.Locaters;
 import Utilities.GWD;
 import io.cucumber.java.en.*;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class _01_RegisterSteps {
-    denizLocaters dl = new denizLocaters();
+    Locaters pl = new Locaters();
     String randomEmail;
 
     @Given("Navigate to Cleverppc")
@@ -20,7 +20,7 @@ public class _01_RegisterSteps {
 
     @When("Click to sign in")
     public void clickToSignIn() {
-        dl.myClick(dl.signIn);
+        pl.myClick(pl.signIn);
     }
 
     @And("Sendkeys email")
@@ -29,7 +29,7 @@ public class _01_RegisterSteps {
 
         for (int i = 0; i < email.size(); i++) {
             randomEmail = RandomStringUtils.randomAlphabetic(5).concat("@gmail.com");
-            dl.mySendKeys(dl.createAccount, randomEmail);
+            pl.mySendKeys(pl.createAccount, randomEmail);
         }
 
     }
@@ -39,8 +39,8 @@ public class _01_RegisterSteps {
         List<String> createAccountBtn = dt.asList(String.class);
 
         for (int i = 0; i < createAccountBtn.size(); i++) {
-            WebElement linkWebElement = dl.getWebElement(createAccountBtn.get(i));
-            dl.myClick(linkWebElement);
+            WebElement linkWebElement = pl.getWebElement(createAccountBtn.get(i));
+            pl.myClick(linkWebElement);
         }
     }
 
@@ -49,9 +49,9 @@ public class _01_RegisterSteps {
         List<List<String>> items = dt.asLists(String.class);
 
         for (int i = 0; i < items.size(); i++) {
-            WebElement e = dl.getWebElement(items.get(i).get(0));
+            WebElement e = pl.getWebElement(items.get(i).get(0));
             String bilgi = items.get(i).get(1);
-            dl.mySendKeys(e, bilgi);
+            pl.mySendKeys(e, bilgi);
         }
     }
 
@@ -60,7 +60,7 @@ public class _01_RegisterSteps {
         List<String> email = dt.asList(String.class);
 
         for (int i = 0; i < email.size(); i++) {
-            dl.mySendKeys(dl.email,randomEmail);
+            pl.mySendKeys(pl.eMail,randomEmail);
         }
     }
 
@@ -69,14 +69,14 @@ public class _01_RegisterSteps {
         List<String> registerBtn = dt.asList(String.class);
 
         for (int i = 0; i < registerBtn.size(); i++) {
-            WebElement linkWebElement = dl.getWebElement(registerBtn.get(i));
-            dl.myClick(linkWebElement);
+            WebElement linkWebElement = pl.getWebElement(registerBtn.get(i));
+            pl.myClick(linkWebElement);
         }
     }
 
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
-        dl.verifyContainsText(dl.successMsg, "has been created");
+        pl.verifyContainsText(pl.successMsg, "has been created");
     }
 
 }
