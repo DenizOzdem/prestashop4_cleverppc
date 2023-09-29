@@ -16,7 +16,7 @@ public class _08_EmailCanSend {
 
     @When("Click to element contact us")
     public void clickToElementContactUs()  {
-       pl.myClick(pl.contactUsButton); //pl.myClick(pl.contactUsButton);
+       pl.myClick(pl.contactUsButton);
     }
 
     @And("Select to element SubjectHeading")

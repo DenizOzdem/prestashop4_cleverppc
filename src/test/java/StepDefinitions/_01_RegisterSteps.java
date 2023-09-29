@@ -74,6 +74,9 @@ public class _01_RegisterSteps {
         }
     }
 
+
+
+
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
         pl.verifyContainsText(pl.successMsg, "has been created");

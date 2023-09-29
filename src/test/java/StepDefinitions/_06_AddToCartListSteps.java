@@ -16,22 +16,22 @@ public class _06_AddToCartListSteps {
 
     @And("Click to Add to card and continue shopping")
     public void clickToAddToCardAndContinueShopping() {
-        int random1=pl.random();
+        int random1=random();
         pl.myClickScript(pl.AllProuducts.get(random1));
         pl.myClick(pl.continueShopping);
         pl.added.add(pl.AllProuducts.get(random1).getAttribute("data-id-product"));
 
-        int random2=pl.random();
+        int random2=random();
         while (random1==random2){
-            random2=pl.random();
+            random2=random();
         }
         pl.myClickScript(pl.AllProuducts.get(random2));
         pl.myClickScript(pl.continueShopping);
         pl.added.add(pl.AllProuducts.get(random2).getAttribute("data-id-product"));
 
-        int random3=pl.random();
+        int random3=random();
         while (random3==random1 || random3==random2){
-            random3=pl.random();
+            random3=random();
         }
         pl.myClickScript(pl.AllProuducts.get(random3));
         pl.myClick(pl.continueShopping);
@@ -54,6 +54,10 @@ public class _06_AddToCartListSteps {
         }
         pl.verifyContainsText(pl.productAmount,"3");
        }
+
+        public int random(){
+        return (int) (Math.random() * pl.AllProuducts.size());
+    }
 }
 
 

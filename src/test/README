@@ -1,0 +1,82 @@
+# Cleverppc_prestashop4_ecommerce project
+
+# Proje Başlığı :
+https://cleverppc.com/prestashop4/  environment’larının bazı fonksiyonlarının test edilmesi..
+
+ ## Açıklama :
+
+CleverPPC'nin web tabanlı e-ticaret platformu olan “Prestashop 4" üzerinde
+test otomasyonunu içermektedir. Prestashop 4, kullanıcıların çevrimiçi mağazalarını
+yönetmelerine ve ürünlerini satmalarına yardımcı olan bir e-ticaret platformudur. Bu projenin
+amacı, Prestashop 4 platformunun farklı özelliklerini test etmek ve platformun istikrarını ve
+performansını doğrulamaktır.
+
+Proje Detayları:
+
+* CleverPPC Environment Testi:
+* CleverPPC web sitesinin demo alanı test edilecektir.
+* Toplam 8 user story proje backlog'unda bulunmaktadır.
+* Aşağıdaki hikayelerin tamamının bir sprintte bitirilmesi hedeflenmiştir.
+
+1. Kullanıcı kaydı (register) yapabilmeli
+2. Kullanıcı, uygulamaya  giriş (login) yapabilmeli.
+3. Kullanıcı hesabına yeni bir adres ekleme.
+4. Sepete ürün ekleme
+5. Sepete eklenen ürünlerin kontrolü
+6. Listelenen ürünlern sayısının kontrolü.
+7. Sipariş verme ve Ödeme
+8. Kullanıcı olarak web sitesi ekibine mail gönderme
+
+
+
+## Başlarken :
+
+### Gereksinimler :
+* JDK1.8se
+* org.seleniumhq.selenium:selenium-java:4.11.0          ---- SELENİUM İÇİN
+* org.slf4j:slf4j-nop:1.7.30                ---- SELENİUM İÇİN
+* commons-io:commons-io:2.11.0                ---- Selenium ekran kaydı için
+* org.testng:testng:6.14.3                -----TestNG için
+*cucumber:7.9.0				------Cucumber için
+*cucumber-testng:7.9.0			-----cucumber-testng için
+
+
+### Kurulum  :
+* GitHub'da Merkez Proje Oluşturulup GitRepo linki Team ile paylaşılmıştır.
+* İntellij üzerinden tüm branşlar VCS ile kendi lokallerine çekmişlerdir.
+* Jirada görevler oluşturulup assign edilip sprint başlamıştır.
+
+### Programı Çalıştırma :
+* Tüm test caseler intellij üzerinden çalıştırılmıştır
+* Xml ile dataProvider ve priority kullanılarak testler oluşturulmuştur
+* Tüm userstoryler ve testcaselerin planlanması ve assign edilmesi JİRA üzerinden yapılmıştır
+* Cucumber üzerinden  üzerinden test report alınmıştır.
+## Yardım :
+
+
+## Yazarlar :
+
+* QA Yasin Kaya      kayayasin541@gmail.com
+* QA Korhan Bozdemir bozdemirkorhan@gmail.com
+* QA Ahmet Tefek     tefekahmet@gmail.com
+* QA Buğrahan Yıldız bugra64han@gmail.com
+* QA İpek Ercan Çetin   ipekctn488@gmail.com
+* QA Deniz Özdem      denizozdem@gmail.com
+* QA Esin Şahan      sahanesin27@gmail.com
+
+## Sürüm Geçmişi :
+v.01= ilk sürüm
+v.02= Son sürüm (Testler sorunsuz  çalıştırıldı ve rapor alındı)
+
+## Lisans :
+
+
+## Teşekkürler :
+
+İsmet Temur
+Mustafa Yılmaz
+Ebuzer T.
+Hakan Taşdelen
+Çağlar Kızılbulut
+Bilal Hoca
+Katkılarından dolayı teşekkür ederiz...

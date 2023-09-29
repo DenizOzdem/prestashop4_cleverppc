@@ -12,9 +12,9 @@ Feature: DataTable Register Functionality
       | createAccountBtn |
 
     And Send keys in denizLocators
-      | firstName | Ali |
-      | lastName  | Yilmaz |
-      | password  | 987654 |
+      | firstName | Ayse |
+      | lastName  | Dogan |
+      | password  | 9988776655 |
 
     And Sendkeys Registeremail
       | email     |

@@ -193,7 +193,7 @@ public class Locaters extends Parent{
     @FindBy(xpath = "(//a[text()='Dresses'])[2]")
     public WebElement dressesBtn;
 
-    @FindBy(xpath = "//span[@class='heading-counter']")
+    @FindBy(xpath = "//div[@id='center_column']/h1")
     public WebElement ustList;
 
     @FindBy(xpath = "(//div[@class='product-count'])[2]")
@@ -230,6 +230,12 @@ public class Locaters extends Parent{
     @FindBy(xpath = "//p[@class='alert alert-success']")
     public WebElement verifymessage;
 
+    @FindBy(xpath = "//input[@type='password']")
+    public WebElement password;
+
+    @FindBy(css = "[class='icon-remove right']")
+    public WebElement deleteBtn;
+
 
     public WebElement getWebElement(String strElement){
         switch (strElement){
@@ -248,6 +254,8 @@ public class Locaters extends Parent{
             case "emailRequiredMsg": return this.emailRequiredMsg;
             case "failMsg": return this.failMsg;
             case "welcomeMsg": return this.welcomeMsg;
+            case "password": return this.password;
+
         }
 
         return null;

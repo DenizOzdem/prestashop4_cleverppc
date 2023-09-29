@@ -6,12 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 //
         features = {"src/test/java/FetureFiles"},
-        glue={"StepDefinitions"}
-//        tags = "@SmokeTest"
-//        dryRun = false// true olduğunda testi çalıştırmaz sadece feature lara
-        // ait steplerin varlığını kontrol eder.
-        // false olduğunda ise testi çalıştırır
-        //  plugin= {"html:target/site/cucumber-pretty.html"}  // basit rapor -> cuma akşam yoruma alındı
+        glue = {"StepDefinitions"},
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }

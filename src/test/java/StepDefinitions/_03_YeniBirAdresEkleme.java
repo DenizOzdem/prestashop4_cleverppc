@@ -4,9 +4,10 @@ package StepDefinitions;
 import Pages.Locaters;
 import Utilities.GWD;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.interactions.Actions;
 
 
-    public class _03_YeniBirAdresEkleme {
+public class _03_YeniBirAdresEkleme {
 
         Locaters pl = new Locaters();
 
@@ -35,7 +36,9 @@ import io.cucumber.java.en.*;
 
             pl.verifyContainsText(pl.adreslerinListesiYazisi,"Your addresses are listed below.");
 
-            GWD.quiteDriver();
+//            pl.myClick(pl.deleteBtn);
+//            GWD.getDriver().switchTo().alert().accept();
+
 
         }
     }

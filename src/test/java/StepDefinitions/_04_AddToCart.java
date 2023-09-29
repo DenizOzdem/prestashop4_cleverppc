@@ -21,7 +21,7 @@ public class _04_AddToCart {
     public void navigateToSummerDresses() {
 
 
-        Actions actions = new Actions(getDriver());
+        Actions actions = new Actions(GWD.getDriver());
         Action act = actions.moveToElement(pl.WomenMenu).build();
         act.perform();
         pl.myClick(pl.SummerDresses);
@@ -30,7 +30,7 @@ public class _04_AddToCart {
     @When("user selects a random dress and click add to cart button")
     public void userSelectsARandomDressAnpllickAddToCartButton() {
 
-        Actions actions = new Actions(getDriver());
+        Actions actions = new Actions(GWD.getDriver());
         Action act = actions.moveToElement(pl.RndDress).build();
         act.perform();
         JavascriptExecutor js= (JavascriptExecutor) GWD.getDriver();
