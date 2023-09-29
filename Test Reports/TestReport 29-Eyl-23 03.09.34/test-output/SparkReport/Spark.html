@@ -1,0 +1,988 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 29, 2023 03:09:34 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DataTable Register Functionality</p>
+            <p class="text-sm">
+              <span>3:09:36 AM</span> / <span>00:00:20:410</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DataTable Register Functionality</h5>
+<span class='badge badge-success'>09.29.2023 3:09:36 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:09:56 AM</span>
+<span class='badge badge-default'>00:00:20:410</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Register with new email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToSignIn()">
+                <span>When Click to sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.sendkeysEmail(io.cucumber.datatable.DataTable)">
+                <span>And Sendkeys email</span>
+      <div><table class='markup-table table '><tr><td>createAccountEmail</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToCreateAnAccountButton(io.cucumber.datatable.DataTable)">
+                <span>And Click to create an account button</span>
+      <div><table class='markup-table table '><tr><td>createAccountBtn</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.sendKeysInDenizLocators(io.cucumber.datatable.DataTable)">
+                <span>And Send keys in denizLocators</span>
+      <div><table class='markup-table table '><tr><td>firstName</td><td>Ayse</td></tr><tr><td>lastName</td><td>Dogan</td></tr><tr><td>password</td><td>9988776655</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.sendkeysRegisteremail(io.cucumber.datatable.DataTable)">
+                <span>And Sendkeys Registeremail</span>
+      <div><table class='markup-table table '><tr><td>email</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToRegisterButton(io.cucumber.datatable.DataTable)">
+                <span>And Click to register button</span>
+      <div><table class='markup-table table '><tr><td>registerBtn</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.successMessageShouldBeDisplayed()">
+                <span>Then Success message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DataTable Login Functionality</p>
+            <p class="text-sm">
+              <span>3:09:56 AM</span> / <span>00:01:13:411</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DataTable Login Functionality</h5>
+<span class='badge badge-success'>09.29.2023 3:09:56 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:11:09 AM</span>
+<span class='badge badge-default'>00:01:13:411</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Login with email and password</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Login with email and password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click to sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Send keys email as "teamone.techno@gmail.com" password as "55555"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Fail message should be displayed</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Login with email and password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click to sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Send keys email as "teamoness.technoss@gmail.com" password as "987654321"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Fail message should be displayed</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Login with email and password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click to sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Send keys email as "teamone.techno@gmail.com" password as ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Password required message should be displayed</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Login with email and password</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click to sign in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Send keys email as "" password as ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Email required message should be displayed</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Login with email and password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToSignIn()">
+                <span>When Click to sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.sendKeysEmailAsPasswordAs(java.lang.String,java.lang.String)">
+                <span>When Send keys email as "teamone.techno@gmail.com" password as "987654321"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.welcomeMessageShouldBeDisplayed()">
+                <span>Then Welcome message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Adding functionality</p>
+            <p class="text-sm">
+              <span>3:11:09 AM</span> / <span>00:00:21:887</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Adding functionality</h5>
+<span class='badge badge-success'>09.29.2023 3:11:09 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:11:31 AM</span>
+<span class='badge badge-default'>00:00:21:887</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>Adding a new address</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToSignIn()">
+                <span>When Click to sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.sendKeysEmailAsPasswordAs(java.lang.String,java.lang.String)">
+                <span>When Send keys email as "teamone.techno@gmail.com" password as "987654321"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.welcomeMessageShouldBeDisplayed()">
+                <span>Then Welcome message should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._03_YeniBirAdresEkleme.clickTheSitemapButtonThenClickOnTheAddressesButtonAddANewAddressToThePageThatOpens()">
+                <span>When Click the sitemap button. Then click on the addresses button. Add a new address to the page that opens.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._03_YeniBirAdresEkleme.theUserShouldSuccessfullyAddANewAddress()">
+                <span>Then The user should successfully add a new address.</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login functionality</p>
+            <p class="text-sm">
+              <span>3:11:31 AM</span> / <span>00:00:16:729</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login functionality</h5>
+<span class='badge badge-success'>09.29.2023 3:11:31 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:11:48 AM</span>
+<span class='badge badge-default'>00:00:16:729</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>Login with valid email and password and click sign in</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToSignIn()">
+                <span>When Click to sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.sendKeysEmailAsPasswordAs(java.lang.String,java.lang.String)">
+                <span>When Send keys email as "teamone.techno@gmail.com" password as "987654321"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.welcomeMessageShouldBeDisplayed()">
+                <span>Then Welcome message should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._04_AddToCart.navigateToSummerDresses()">
+                <span>And navigate to summer dresses</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._04_AddToCart.userSelectsARandomDressAnpllickAddToCartButton()">
+                <span>When user selects a random dress and click add to cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._04_AddToCart.productShouldBeSuccessfullyAddedToTheCart()">
+                <span>And product should be successfully added to the cart</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="71"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">List Control</p>
+            <p class="text-sm">
+              <span>3:11:48 AM</span> / <span>00:00:13:255</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">List Control</h5>
+<span class='badge badge-success'>09.29.2023 3:11:48 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:12:01 AM</span>
+<span class='badge badge-default'>00:00:13:255</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=71</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Control of the number of products listed</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._05_ControlList.userClicksOnTheDressesCategory()">
+                <span>When User Clicks on the dresses category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._05_ControlList.validatingTheNumberAtTheTopOfTheList()">
+                <span>Then Validating the number at the top of the list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._05_ControlList.validatingTheNumberAtTheButtomOfTheList()">
+                <span>And Validating the number at the buttom of the list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._05_ControlList.checkTheNumberByCountingListProducts()">
+                <span>Then Check the number by counting list products</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add To Cart List functionality</p>
+            <p class="text-sm">
+              <span>3:12:01 AM</span> / <span>00:00:18:685</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Add To Cart List functionality</h5>
+<span class='badge badge-success'>09.29.2023 3:12:01 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:12:20 AM</span>
+<span class='badge badge-default'>00:00:18:685</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Add To Cart List</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToSignIn()">
+                <span>When Click to sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.sendKeysEmailAsPasswordAs(java.lang.String,java.lang.String)">
+                <span>When Send keys email as "teamone.techno@gmail.com" password as "987654321"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.welcomeMessageShouldBeDisplayed()">
+                <span>Then Welcome message should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._06_AddToCartListSteps.clickToDresses()">
+                <span>And Click to Dresses</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._06_AddToCartListSteps.clickToAddToCardAndContinueShopping()">
+                <span>And Click to Add to card and continue shopping</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._06_AddToCartListSteps.verifyProductsAndProductAmount()">
+                <span>Then Verify products and product amount</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="91"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Emailsendcan functionality</p>
+            <p class="text-sm">
+              <span>3:12:20 AM</span> / <span>00:00:19:453</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Emailsendcan functionality</h5>
+<span class='badge badge-success'>09.29.2023 3:12:20 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:12:40 AM</span>
+<span class='badge badge-default'>00:00:19:453</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=91</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="92"><span class="badge log pass-bg mr-2">Pass</span>Contact us part sended can valid Email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToSignIn()">
+                <span>When Click to sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.clickToElementContactUs()">
+                <span>When Click to element contact us</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.selectToElementSubjectHeading()">
+                <span>And Select to element SubjectHeading</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.userSendingTheKeysInEmail()">
+                <span>And User sending the keys in email</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.userSendingTheKeysInReferansno()">
+                <span>And User sending the keys in referansno</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.clickToElementChooseFile()">
+                <span>And Click to element Choose File</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.uploadFileWithRobotClass()">
+                <span>And Upload File with RobotClass</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.userSendingTheKeysInMessage()">
+                <span>And User sending the keys in message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.clickToElementSend()">
+                <span>And Click to element send</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._08_EmailCanSend.yourMessageHasBeenSuccessfully()">
+                <span>Then Your message has been successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="106"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Order and Payment</p>
+            <p class="text-sm">
+              <span>3:12:40 AM</span> / <span>00:00:30:647</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Order and Payment</h5>
+<span class='badge badge-success'>09.29.2023 3:12:40 AM</span>
+<span class='badge badge-danger'>09.29.2023 3:13:10 AM</span>
+<span class='badge badge-default'>00:00:30:647</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=106</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Order and Payment</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.navigateToCleverppc()">
+                <span>Given Navigate to Cleverppc</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._01_RegisterSteps.clickToSignIn()">
+                <span>When Click to sign in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.sendKeysEmailAsPasswordAs(java.lang.String,java.lang.String)">
+                <span>When Send keys email as "teamone.techno@gmail.com" password as "987654321"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._02_LoginSteps.welcomeMessageShouldBeDisplayed()">
+                <span>Then Welcome message should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.userClicksOnCartOrCheckoutButton()">
+                <span>When User clicks on cart or Checkout button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.userThenSelectsAnAddress()">
+                <span>Then User then selects an address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.userTicksThePostMethodAndTermsOfService()">
+                <span>And User ticks the post method and terms of service</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.userSelectProceedsWithThePaymentProcess()">
+                <span>Then User select proceeds with the payment process</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.paymentViaPaypalIsSelectedAndAWarningMessageShouldAppear()">
+                <span>And Payment via Paypal is selected and a warning message should appear</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.userThenNavigateBackAndClicksOnPayByCreditCardAndTheWarningMessageShouldAppear()">
+                <span>Then User then navigate back and clicks on Pay by Credit Card and the warning message should appear.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.userNavigateBackAndClicksOnBankPayment()">
+                <span>And User navigate back and clicks on Bank payment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.userSeesThatTheTotalPriceEqualsTheShippingPriceAndTaxes()">
+                <span>Then User sees that the total price equals the shipping price and taxes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions._07_OrderAndPayment.orderNumberIsRecorded()">
+                <span>And The order number is recorded</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 29, 2023 03:09:34 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 29, 2023 03:13:10 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>8</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>8</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>12</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>77</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"DataTable Register Functionality":20.41,"DataTable Login Functionality":73.411,"Adding functionality":21.887,"Login functionality":16.729,"List Control":13.255,"Add To Cart List functionality":18.685,"Emailsendcan functionality":19.453,"Order and Payment":30.647
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 8,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 12,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 77,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
